@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meri Shiza...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Sarina&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 8%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(src/img/hehe.jpg);
+        background-size: cover;
+        background-position: right;
+        animation: backgroundAnimation 10s ease 1;
+        font-family: "Arial", sans-serif;
+        color: rgb(11, 0, 20);
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+
+      .letter {
+        text-align: center;
+        padding: 20px;
+        text-align: left;
+        padding-left: 6%;
+        padding-right: 6%;
+        border: 2px solid #fff;
+        border-radius: 36px;
+        background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque for readability */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        animation: float 18s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      h1 {
+        font-family: "Sarina", cursive;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: "Grand Hotel", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.2em;
+        margin: 10px 0;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+      }
+
+      p:nth-child(2) {
+        animation-delay: 0.6s;
+      }
+
+      p:nth-child(3) {
+        animation-delay: 1.2s;
+      }
+
+      p:nth-child(4) {
+        animation-delay: 1.8s;
+      }
+
+      p:nth-child(5) {
+        animation-delay: 2.4s;
+      }
+
+      p:nth-child(6) {
+        animation-delay: 3s;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .next-letter-button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 1.5em;
+        font-family: 'Sarina', cursive;
+        color: white;
+        background-color: #93004c;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .next-letter-button:hover {
+        background-color: #a87798;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="letter">
+      <h1>Meri paali shi Shiza,</h1>
+      <p>
+        "Har waqt apko kisi na kisi cheez ki tension rehti hai meri wajh se"
+      </p>
+      <p>
+        Bro fuck you
+      </p>
+      <p>
+        I can take anything for you. Every tension fades away when i sink in those eyes and that pretty smile. I'm fine with all the problems and tensions in the world as long as its for you. 
+      </p>
+      <p>
+        And secondly, no its not always because of you. sometimes its me too. i make mistakes too. we not being able to hug today was also partly my fault too. i thought it was wednesday and we had another day to meet so i didnt insist too much... but it is what it is... i can wait for my little baby.
+      </p>
+      <p>
+        And thirdly, I love you. I always have. I always will.
+        <br />Just dont worry my lovely little darling.
+        <br />I'll always be here for you.
+        <br />
+        <br />Your Abdullah
+      </p>
+      <p>
+        <br />
+      </p>
+    </div>
+  </body>
+</html>
