@@ -48,9 +48,16 @@
         padding-right: 6%;
         border: 2px solid #fff;
         border-radius: 36px;
-        background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque for readability */
+        background-color: rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         animation: float 18s ease-in-out infinite;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+
+      }
+
+      .letter:hover {
+        transform: scale(1.05); /* Scale up on hover */
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); /* Increase shadow on hover */
       }
 
       @keyframes float {
@@ -138,7 +145,7 @@
   </head>
 
   <body>
-    <div class="letter">
+    <div class="letter" onclick="handleClick()">
       <h1>Meri paali shi Shiza,</h1>
       <p>
         "Har waqt apko kisi na kisi cheez ki tension rehti hai meri wajh se"
@@ -163,5 +170,14 @@
         <br />
       </p>
     </div>
+    <script>
+        function handleClick() {
+          const letter = document.querySelector('.letter');
+          letter.classList.add('clicked');
+          setTimeout(() => {
+            letter.classList.remove('clicked');
+          }, 300);
+        }
+      </script>
   </body>
 </html>
